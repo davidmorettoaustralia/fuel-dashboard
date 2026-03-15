@@ -1,23 +1,125 @@
 {
-  "fetched_at": "2026-03-15T00:00:00Z",
+  "fetched_at": "2026-03-15T11:39:25Z",
   "data_date": "2026-03-15",
   "indicators": {
-    "brent_crude": {"value": 120.0, "unit": "USD/bbl", "date": "2026-03-15", "source": "seed", "label": "Brent crude", "thresholds": {"green": 90, "amber": 120}, "status": "red", "description": "Green <$90 · Amber $90–120 · Red >$120"},
-    "audusd": {"value": 0.623, "unit": "AUD/USD", "date": "2026-03-15", "source": "seed", "label": "AUD/USD", "thresholds": {"green": 0.66, "amber": 0.60}, "status": "amber", "description": "Green ≥0.66 · Amber 0.60–0.65 · Red <0.60"},
-    "accc_fuel_price": {"value": 228.5, "unit": "cents/litre", "date": "2026-03-15", "source": "seed", "label": "National avg ULP (c/L)", "thresholds": {}, "status": "red", "description": "Green <180 c/L · Amber 180–220 · Red >220"},
-    "diesel_mso_days": {"value": 31, "unit": "days cover", "date": "2026-03-15", "source": "seed", "label": "Diesel MSO cover", "thresholds": {"green": 40, "amber": 32}, "status": "red", "description": "Green >40 days · Amber 32–40 · Red <32 (legislative min)"},
-    "petrol_mso_days": {"value": 36, "unit": "days cover", "date": "2026-03-15", "source": "seed", "label": "Petrol MSO cover", "thresholds": {"green": 35, "amber": 27}, "status": "green", "description": "Green >35 days · Amber 27–35 · Red <27 (legislative min)"},
-    "tanker_freight_index": {"value": null, "unit": "index", "date": "2026-03-15", "source": "seed", "label": "Crude tanker rate index", "thresholds": {}, "status": "unknown", "description": "Proxy only — subscribe to Baltic Exchange for MR rates", "note": "Requires paid subscription for live data"},
-    "hormuz_transits": {"value": null, "unit": "transits/day", "date": "2026-03-15", "source": "manual", "label": "Hormuz tanker transits/day", "thresholds": {"green": 20, "amber": 10}, "status": "unknown", "description": "Green ≥20/day · Amber 10–19 · Red <10 — requires paid AIS feed", "note": "Update manually from MarineTraffic or Kpler. Current est: ~2–3/day"},
-    "gasoil_crack_spread": {"value": 39.5, "unit": "USD/bbl vs Brent", "date": "2026-03-15", "source": "seed", "label": "Gasoil crack spread (proxy)", "thresholds": {"green": 25, "amber": 35}, "status": "red", "description": "Green <$25/bbl · Amber $25–35 · Red >$35 (physical tightening)"}
+    "brent_crude": {
+      "value": 94.35,
+      "unit": "USD/bbl",
+      "date": "2026-03-09",
+      "source": "EIA",
+      "label": "Brent crude",
+      "thresholds": {
+        "green": 90,
+        "amber": 120
+      },
+      "status": "amber",
+      "description": "Green <$90 \u00b7 Amber $90\u2013120 \u00b7 Red >$120"
+    },
+    "audusd": {
+      "value": 0.7126,
+      "unit": "AUD/USD",
+      "date": "27-Feb-2026",
+      "source": "RBA",
+      "label": "AUD/USD",
+      "thresholds": {
+        "green": 0.66,
+        "amber": 0.6
+      },
+      "status": "green",
+      "description": "Green \u22650.66 \u00b7 Amber 0.60\u20130.65 \u00b7 Red <0.60"
+    },
+    "accc_fuel_price": {
+      "value": null,
+      "unit": "cents/litre",
+      "date": "2026-03-15",
+      "source": "unavailable",
+      "label": "National avg ULP (c/L)",
+      "thresholds": {
+        "note": "No fixed threshold \u2014 monitor trend"
+      },
+      "status": "unknown",
+      "description": "Green <180 c/L \u00b7 Amber 180\u2013220 \u00b7 Red >220"
+    },
+    "diesel_mso_days": {
+      "value": null,
+      "unit": "days cover",
+      "date": "2026-03-15",
+      "source": "unavailable",
+      "label": "Diesel MSO cover",
+      "thresholds": {
+        "green": 40,
+        "amber": 32
+      },
+      "status": "unknown",
+      "description": "Green >40 days \u00b7 Amber 32\u201340 \u00b7 Red <32 (legislative min)"
+    },
+    "petrol_mso_days": {
+      "value": null,
+      "unit": "days cover",
+      "date": "2026-03-15",
+      "source": "unavailable",
+      "label": "Petrol MSO cover",
+      "thresholds": {
+        "green": 35,
+        "amber": 27
+      },
+      "status": "unknown",
+      "description": "Green >35 days \u00b7 Amber 27\u201335 \u00b7 Red <27 (legislative min)"
+    },
+    "tanker_freight_index": {
+      "value": null,
+      "unit": "index",
+      "date": "2026-03-15",
+      "source": "unavailable",
+      "note": "Baltic/Platts MR freight requires paid subscription",
+      "label": "Crude tanker rate index",
+      "thresholds": {
+        "note": "EIA monthly proxy \u2014 not MR product tanker"
+      },
+      "status": "unknown",
+      "description": "Proxy only \u2014 subscribe to Baltic Exchange for MR rates"
+    },
+    "hormuz_transits": {
+      "value": null,
+      "unit": "transits/day",
+      "date": "2026-03-15",
+      "source": "manual",
+      "note": "Requires MarineTraffic Professional or Kpler API for live count. Update manually from news sources.",
+      "label": "Hormuz tanker transits/day",
+      "thresholds": {
+        "green": 20,
+        "amber": 10
+      },
+      "status": "unknown",
+      "description": "Green \u226520/day \u00b7 Amber 10\u201319 \u00b7 Red <10 \u2014 requires paid AIS feed"
+    },
+    "gasoil_crack_spread": {
+      "value": null,
+      "unit": "USD/bbl",
+      "date": "2026-03-15",
+      "source": "unavailable",
+      "note": "Singapore crack requires Argus/Platts subscription",
+      "label": "Gasoil crack spread (proxy)",
+      "thresholds": {
+        "green": 25,
+        "amber": 35
+      },
+      "status": "unknown",
+      "description": "Green <$25/bbl \u00b7 Amber $25\u201335 \u00b7 Red >$35 (physical tightening)"
+    }
   },
-  "composite": {"description": "Rationing risk: counts of red indicators firing", "red_count": 4, "amber_count": 1, "risk_level": "CRITICAL"},
+  "composite": {
+    "description": "Rationing risk: counts of red indicators firing",
+    "red_count": 0,
+    "risk_level": "NORMAL",
+    "amber_count": 1
+  },
   "data_gaps": [
     "Hormuz AIS transits: requires MarineTraffic Professional or Kpler API",
     "Singapore-specific crack spreads: requires Argus or Platts subscription",
-    "MR product tanker freight (Singapore–East AU): requires Baltic Exchange or Clarksons",
+    "MR product tanker freight (Singapore-East AU): requires Baltic Exchange or Clarksons",
     "Independent retailer fill rate: requires HVIA/ATA industry feed",
     "AU-bound vessel departure count: requires Kpler/Vortexa",
-    "ACCC fuel price: web scrape — may break if ACCC updates page layout"
+    "ACCC fuel price: web scrape \u2014 may break if ACCC updates their page layout"
   ]
 }
