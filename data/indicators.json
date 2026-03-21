@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-03-20T21:56:07Z",
-  "data_date": "2026-03-20",
+  "fetched_at": "2026-03-21T21:50:09Z",
+  "data_date": "2026-03-21",
   "indicators": {
     "brent_crude": {
-      "value": 101.04,
+      "value": null,
       "unit": "USD/bbl",
-      "date": "2026-03-16",
-      "source": "EIA",
+      "date": "2026-03-21",
+      "source": "unavailable",
       "label": "Brent crude",
       "thresholds": {
         "green": 90,
         "amber": 120
       },
-      "status": "amber",
+      "status": "unknown",
       "description": "Green <$90 \u00b7 Amber $90\u2013120 \u00b7 Red >$120"
     },
     "audusd": {
@@ -31,7 +31,7 @@
     "accc_fuel_price": {
       "value": null,
       "unit": "cents/litre",
-      "date": "2026-03-20",
+      "date": "2026-03-21",
       "source": "unavailable",
       "label": "National avg ULP (c/L)",
       "thresholds": {
@@ -43,7 +43,7 @@
     "diesel_mso_days": {
       "value": null,
       "unit": "days cover",
-      "date": "2026-03-20",
+      "date": "2026-03-21",
       "source": "unavailable",
       "label": "Diesel MSO cover",
       "thresholds": {
@@ -56,7 +56,7 @@
     "petrol_mso_days": {
       "value": null,
       "unit": "days cover",
-      "date": "2026-03-20",
+      "date": "2026-03-21",
       "source": "unavailable",
       "label": "Petrol MSO cover",
       "thresholds": {
@@ -69,7 +69,7 @@
     "tanker_freight_index": {
       "value": null,
       "unit": "index",
-      "date": "2026-03-20",
+      "date": "2026-03-21",
       "source": "unavailable",
       "note": "Baltic/Platts MR freight requires paid subscription",
       "label": "Crude tanker rate index",
@@ -82,7 +82,7 @@
     "hormuz_transits": {
       "value": null,
       "unit": "transits/day",
-      "date": "2026-03-20",
+      "date": "2026-03-21",
       "source": "manual",
       "note": "Requires MarineTraffic Professional or Kpler API for live count. Update manually from news sources.",
       "label": "Hormuz tanker transits/day",
@@ -96,7 +96,7 @@
     "gasoil_crack_spread": {
       "value": null,
       "unit": "USD/bbl",
-      "date": "2026-03-20",
+      "date": "2026-03-21",
       "source": "unavailable",
       "note": "Singapore crack requires Argus/Platts subscription",
       "label": "Gasoil crack spread (proxy)",
@@ -112,7 +112,7 @@
     "description": "Rationing risk: counts of red indicators firing",
     "red_count": 0,
     "risk_level": "NORMAL",
-    "amber_count": 1
+    "amber_count": 0
   },
   "data_gaps": [
     "Hormuz AIS transits: requires MarineTraffic Professional or Kpler API",
