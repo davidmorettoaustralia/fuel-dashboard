@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-04-20T21:50:58Z",
-  "data_date": "2026-04-20",
+  "fetched_at": "2026-04-21T21:48:51Z",
+  "data_date": "2026-04-21",
   "indicators": {
     "brent_crude": {
       "value": 123.28,
@@ -31,7 +31,7 @@
     "accc_fuel_price": {
       "value": null,
       "unit": "cents/litre",
-      "date": "2026-04-20",
+      "date": "2026-04-21",
       "source": "unavailable",
       "label": "National avg ULP (c/L)",
       "thresholds": {
@@ -43,7 +43,7 @@
     "diesel_mso_days": {
       "value": null,
       "unit": "days cover",
-      "date": "2026-04-20",
+      "date": "2026-04-21",
       "source": "unavailable",
       "label": "Diesel MSO cover",
       "thresholds": {
@@ -56,7 +56,7 @@
     "petrol_mso_days": {
       "value": null,
       "unit": "days cover",
-      "date": "2026-04-20",
+      "date": "2026-04-21",
       "source": "unavailable",
       "label": "Petrol MSO cover",
       "thresholds": {
@@ -69,7 +69,7 @@
     "tanker_freight_index": {
       "value": null,
       "unit": "index",
-      "date": "2026-04-20",
+      "date": "2026-04-21",
       "source": "unavailable",
       "note": "Baltic/Platts MR freight requires paid subscription",
       "label": "Crude tanker rate index",
@@ -82,7 +82,7 @@
     "hormuz_transits": {
       "value": null,
       "unit": "transits/day",
-      "date": "2026-04-20",
+      "date": "2026-04-21",
       "source": "manual",
       "note": "Requires MarineTraffic Professional or Kpler API for live count. Update manually from news sources.",
       "label": "Hormuz tanker transits/day",
@@ -96,7 +96,7 @@
     "gasoil_crack_spread": {
       "value": null,
       "unit": "USD/bbl",
-      "date": "2026-04-20",
+      "date": "2026-04-21",
       "source": "unavailable",
       "note": "Singapore crack requires Argus/Platts subscription",
       "label": "Gasoil crack spread (proxy)",
