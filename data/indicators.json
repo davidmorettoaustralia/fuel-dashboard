@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-10-20T00:08:03Z",
+  "fetched_at": "2026-10-20T23:40:02Z",
   "data_date": "2026-10-20",
   "indicators": {
     "brent_crude": {
-      "value": 126.55,
+      "value": null,
       "unit": "USD/bbl",
-      "date": "2026-10-14",
-      "source": "EIA",
+      "date": "2026-10-20",
+      "source": "unavailable",
       "label": "Brent crude",
       "thresholds": {
         "green": 90,
         "amber": 120
       },
-      "status": "red",
+      "status": "unknown",
       "description": "Green <$90 \u00b7 Amber $90\u2013120 \u00b7 Red >$120"
     },
     "audusd": {
@@ -110,8 +110,8 @@
   },
   "composite": {
     "description": "Rationing risk: counts of red indicators firing",
-    "red_count": 1,
-    "risk_level": "ELEVATED",
+    "red_count": 0,
+    "risk_level": "NORMAL",
     "amber_count": 0
   },
   "data_gaps": [
